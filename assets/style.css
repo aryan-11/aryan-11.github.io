@@ -1,0 +1,240 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1C1B20;
+}
+
+.container-pagina
+{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.pagina
+{
+    scroll-snap-align: start;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#pagina1, #pagina2
+{
+    background: linear-gradient(to right,  #FF5851 0%,#FF5851 50%,#fff 50%,#fff 100%);
+}
+
+#pagina3, #pagina4
+{
+    background: linear-gradient(to right,  #fff 0%,#fff 50%,#FF5851 50%,#FF5851 100%);
+}
+
+/*-------------------------*/
+
+.container-middle-content
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-middle-content3
+{
+    justify-content: center;
+}
+
+/*------------------------*/
+
+
+
+/*------------------------*/
+.container-nome, .container-about, .container-project, .container-contact
+{
+    width: 70%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container-about
+{
+    width: 70%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.container-project
+{
+    width: 90%;
+    height: 120px;
+    justify-content: flex-start;
+}
+
+.container-contact
+{
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+}
+/*------------------------*/
+
+
+.question
+{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.question-contact
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container-arrow
+{
+    margin-left: 49px;
+    width: 50px;
+    height: 120px;
+    background-color: #1C1B20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-projects, .box-contact
+{
+    width: 90%;
+    height: 400px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px solid #1C1B20;
+
+}
+
+.box-contact
+{
+    width: 70%;
+    height: 300px;
+    border: 5px solid #1C1B20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-box-card
+{
+    height: 250px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-card
+{
+    width: 180px;
+    height: 210px;
+}
+
+.card
+{
+    width: 180px;
+    height: 180px;
+    background-color: #1C1B20;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 750px)
+{
+
+    .container-project
+    {
+        width: 80%;
+    }   
+
+    .container-box-card
+    {
+        height: 400px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box-projects
+    {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .box-card
+    {
+        width: 80%;
+        height: 120px;
+    }
+    
+    .card
+    {
+        width: 100%;
+        height: 100px;
+        
+    }
+
+    .container-arrow
+    {
+        align-self: flex-end;
+    }
+
+    .box-contact
+    {
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    ul
+    {
+        list-style: none;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li 
+    {
+        height: 30px;
+    }
+}
